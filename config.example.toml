@@ -1,0 +1,26 @@
+# llm-cli configuration
+# Copy to ~/.config/llm-cli/config.toml and adjust values.
+# Protect with: chmod 600 ~/.config/llm-cli/config.toml
+
+[api]
+# API base URL for the LLM endpoint.
+# LM Studio default: http://localhost:1234/v1
+# Ollama default:    http://localhost:11434/v1
+base_url = "http://localhost:1234/v1"
+
+# API key (required only for remote APIs like OpenAI).
+# For local LLMs (LM Studio, Ollama), leave empty or use any string.
+#api_key = ""
+
+# Request timeout in seconds.
+#timeout_seconds = 120
+
+# How to send response_format for structured output:
+#   auto   — send response_format; fall back to prompt injection on unsupported APIs (default)
+#   native — always send response_format; fail if the API does not support it
+#   prompt — never send response_format; always use system-prompt injection
+#response_format_strategy = "auto"
+
+[model]
+# Default model name.
+#name = "default-model"
