@@ -154,5 +154,10 @@ make check      # vet + test + build
 
 ## ドキュメント
 
-- [RFP (英語)](docs/en/llm-cli-rfp.md)
-- [RFP (日本語)](docs/ja/llm-cli-rfp.ja.md)
+- [アーキテクチャ](docs/ja/architecture.ja.md) — 設計判断とデータフロー
+- [構造化出力ガイド](docs/ja/structured-output.ja.md) — JSON スキーマ、フォールバック戦略
+- [RFP](docs/ja/llm-cli-rfp.ja.md) — 要件定義・企画ドキュメント
+
+## ライセンス
+
+MIT License。詳細は [LICENSE](LICENSE) を参照。

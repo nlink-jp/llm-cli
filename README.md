@@ -154,5 +154,10 @@ make check      # vet + test + build
 
 ## Documentation
 
-- [RFP (English)](docs/en/llm-cli-rfp.md)
-- [RFP (Japanese)](docs/ja/llm-cli-rfp.ja.md)
+- [Architecture](docs/en/architecture.md) — design rationale and data flow
+- [Structured Output Guide](docs/en/structured-output.md) — JSON schema, fallback strategies
+- [RFP](docs/en/llm-cli-rfp.md) — requirements and planning document
+
+## License
+
+MIT License. See [LICENSE](LICENSE) for details.
