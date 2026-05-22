@@ -5,6 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.1.2] - 2026-05-22
+
+### Added
+
+- **Pre-built binary releases for the first time.** A new `package`
+  target produces zipped binaries for darwin/amd64, darwin/arm64,
+  linux/amd64, linux/arm64, and windows/amd64. Previously llm-cli
+  was installed via `go install` only. Asset naming:
+  `llm-cli-vX.Y.Z-<os>-<arch>.zip`.
+- **Darwin builds are Developer ID signed and Apple-notarized.**
+  `make package` runs `scripts/codesign-darwin.sh` per darwin
+  binary and `scripts/notarize-darwin.sh` per darwin zip,
+  following the org-wide convention in `nlink-jp/.github`
+  CONVENTIONS.md §Code Signing. End users on macOS no longer
+  need to bypass Gatekeeper with right-click → Open; local
+  Dropbox-synced (FileProvider-managed) install paths no longer
+  SIGKILL the binary on launch.
+
+No behaviour change to the binary itself — feature-wise this is
+identical to v0.1.1.
+
 ## [0.1.1] - 2026-05-03
 
 ### Fixed
