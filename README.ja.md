@@ -147,7 +147,7 @@ llm-cli -m "google/gemma-4-26b-a4b" --endpoint "http://localhost:11434" "Hello"
 
 ```bash
 make build      # dist/llm-cli（現在のプラットフォーム）
-make build-all  # 全プラットフォーム（linux/darwin/windows, amd64/arm64）
+make build-all  # 全プラットフォーム（linux amd64/arm64, darwin arm64, windows amd64）
 make test       # テスト実行
 make check      # vet + test + build
 ```

@@ -147,7 +147,7 @@ reference the tag name. Disable with `--no-safe-input`.
 
 ```bash
 make build      # dist/llm-cli (current platform)
-make build-all  # All platforms (linux/darwin/windows, amd64/arm64)
+make build-all  # All platforms (linux amd64/arm64, darwin arm64, windows amd64)
 make test       # Run tests
 make check      # vet + test + build
 ```
