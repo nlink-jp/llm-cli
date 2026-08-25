@@ -15,6 +15,7 @@ Next-generation successor to [lite-llm](https://github.com/nlink-jp/lite-llm).
 make build    # dist/llm-cli
 make test     # go test ./...
 make check    # vet -> test -> build
+make verify-release  # gate: .notarized marker + freshness (run before upload)
 ```
 
 ## Key structure
